@@ -2,9 +2,12 @@
 npm install
 npm run dev
 
-pell.jsçš„æ³¨é‡Šåœ¨./pell.js
+pell.jsµÄ×¢ÊÍÔÚ./pell.js
 
 
-demoåœ¨./src/App.vueä¸­
-
+demoÔÚ./src/App.vueÖÐ
+./example/pell.html
 http://2233.oss.cn-south-1.jcloudcs.com/index.html
+
+document.execCommand
+https://developer.mozilla.org/zh-CN/docs/Web/API/Document/execCommand
