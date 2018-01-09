@@ -1,0 +1,75 @@
+{
+  "_args": [
+    [
+      "pell@0.7.0",
+      "D:\\NoProjects\\pell\\_pell"
+    ]
+  ],
+  "_from": "pell@0.7.0",
+  "_id": "pell@0.7.0",
+  "_inBundle": false,
+  "_integrity": "sha512-F3bag4WjHT76Nxk6wDWWWh2oJdVwI8RveyTU79YOa1iOyofkPDdjM41ccOi8i51E4MGnmwk2nI991a5t9+GuDw==",
+  "_location": "/pell",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "pell@0.7.0",
+    "name": "pell",
+    "escapedName": "pell",
+    "rawSpec": "0.7.0",
+    "saveSpec": null,
+    "fetchSpec": "0.7.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/pell/-/pell-0.7.0.tgz",
+  "_spec": "0.7.0",
+  "_where": "D:\\NoProjects\\pell\\_pell",
+  "author": {
+    "name": "Jared Reich"
+  },
+  "bugs": {
+    "url": "https://github.com/jaredreich/pell/issues"
+  },
+  "description": "pell - the simplest and smallest WYSIWYG text editor for web, with no dependencies",
+  "devDependencies": {
+    "babel-core": "6.23.1",
+    "babel-preset-es2015": "6.22.0",
+    "babel-preset-stage-0": "6.22.0",
+    "del": "2.2.2",
+    "eslint-config-jared": "1.2.0",
+    "gulp": "3.9.1",
+    "gulp-cssnano": "2.1.2",
+    "gulp-rename": "1.2.2",
+    "gulp-rollup": "2.14.0",
+    "gulp-sass": "3.1.0",
+    "gulp-size": "2.1.0",
+    "rollup": "0.45.1",
+    "rollup-plugin-babel": "2.7.1",
+    "rollup-plugin-uglify": "2.0.1",
+    "run-sequence": "1.2.2"
+  },
+  "homepage": "https://jaredreich.com/pell",
+  "keywords": [
+    "text editor",
+    "editor",
+    "rich text",
+    "wysiwyg",
+    "contenteditable"
+  ],
+  "license": "MIT",
+  "main": "./dist/pell.min.js",
+  "name": "pell",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaredreich/pell.git"
+  },
+  "scripts": {
+    "build": "gulp clean && gulp script && gulp style",
+    "dev": "gulp",
+    "lint": "eslint .js ./"
+  },
+  "version": "0.7.0"
+}
