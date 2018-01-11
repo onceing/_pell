@@ -9,9 +9,12 @@
       .mdiv{
         width: 20px;
         height: 20px;
+        float: right;
         background-color: red;
         box-shadow: 0 7px 15px rgba(0, 0, 0, .2);
       }
+      .demo:after,.demo2:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+      .demo,.demo2{*+height:1%;}
     </style>
   </head>
   <body>
@@ -36,11 +39,12 @@
     'addBackColor',
     'undo',
     {
+      container: 'ipc',
       name: 'imdiv',
-      icon: '<div class=\'mdiv\'>T</div>',
+      icon: '<div class=\'mdiv\'>X</div>',
       title: 'imdiv',
       result: function result() {
-        alert('imdiv')
+        alert('close')
       }
     },
     {

@@ -148,6 +148,11 @@ var init = function init(settings) {
 
   settings.classes = _extends({}, classes, settings.classes);
 
+  var ipcbar = document.createElement('div')
+  ipcbar.className = settings.classes.actionbar + ' demo clearfix'
+  ipcbar.style.backgroundColor= 'blue';
+  settings.element.appendChild(ipcbar)
+
   var actionbar = document.createElement('div');
   actionbar.className = settings.classes.actionbar;
   settings.element.appendChild(actionbar);
@@ -162,12 +167,22 @@ var init = function init(settings) {
   settings.element.appendChild(settings.element.content);
 
   settings.actions.forEach(function (action) {
-    var button = document.createElement('button');
-    button.className = settings.classes.button;
-    button.innerHTML = action.icon;
-    button.title = action.title;
-    button.onclick = action.result;
-    actionbar.appendChild(button);
+    if (action.container === 'ipc'){
+      const button = document.createElement('button')
+      button.className = settings.classes.button
+      button.innerHTML = action.icon
+      button.title = action.title
+      button.onclick = action.result
+      button.style.float= 'right'
+      ipcbar.appendChild(button)
+    } else{
+      const button = document.createElement('button')
+      button.className = settings.classes.button
+      button.innerHTML = action.icon
+      button.title = action.title
+      button.onclick = action.result
+      actionbar.appendChild(button)
+    }
   });
 
   if (settings.styleWithCSS) exec('styleWithCSS');
