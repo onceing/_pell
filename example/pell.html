@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link href="./pell/dist/pell.css" rel="stylesheet">
     <title>pell__</title>
+    <style>
+      .mdiv{
+        width: 20px;
+        height: 20px;
+        background-color: red;
+        box-shadow: 0 7px 15px rgba(0, 0, 0, .2);
+      }
+    </style>
   </head>
   <body>
       <div id="pell"></div>
@@ -27,6 +35,14 @@
     actions: [
     'addBackColor',
     'undo',
+    {
+      name: 'imdiv',
+      icon: '<div class=\'mdiv\'>T</div>',
+      title: 'imdiv',
+      result: function result() {
+        alert('imdiv')
+      }
+    },
     {
         name: 'color',
         icon: '<b>C</b>',
